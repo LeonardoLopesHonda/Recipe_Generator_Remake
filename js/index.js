@@ -1,5 +1,3 @@
-import { getRecipe } from "./Modules/API.js";
-
 const NAVBAR_ICON = document.querySelector('.mobile-menu-icon');
 
 NAVBAR_ICON.addEventListener('click', function (){
