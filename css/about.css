@@ -1,127 +1,73 @@
 @import url(main.css);
 
-.container div {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .about div h1 {
     color: var(--contrast);
 
-    font-size: 40px;
+    font-size: 3rem;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
 
     margin-bottom: 20px;
 }
 
-.container div p {
-    font-size: 1.1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 200%;
-    width: 85%;
+.about div p{
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 strong {
-    color: var(--accent);
-    font-style: italic;
     font-size: 1.1rem;
+    color: var(--accent);
 }
-
-.container div a {
-    width: 50%;
-    padding: 1.5rem;
-    margin-top: 2rem;
-
-    background: var(--primaryButton);
-    color: #000;
-    border: solid black 1px;
-    border-radius: 5px;
-
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-
-    transition: background 300ms,
-        border 300ms,
-        transform 500ms;
-}
-
-.container div a:hover, .container div a:focus {
-    background: var(--accent);
-    border: none;
-    transform: scale(1.15);
-}
-
-/* sm */
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
-}
-
-/* md */
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
 /* lg */
 @media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
+    .about div h1 {
+        font-size: 2.8rem;
     }
 
-    .mobile-menu {
-        display: none;
+    .about div p{
+        font-size: 1.8rem;
     }
 
-    .nav-item {
-        display: block;
-    }
-
-    .mobile-menu-icon {
-        display: none;
+    strong {
+        font-size: 1.6rem;
     }
 }
 
 /* xl */
 @media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-
-    .mobile-menu {
-        display: none;
+    .about {
+        margin-top: 5%;
     }
     
-    .nav-item {
-        display: block;
+    .about div h1 {
+        font-size: 3.5rem;
     }
 
-    .mobile-menu-icon {
-        display: none;
+    .about div p{
+        font-size: 2rem;
     }
+
+    strong {
+        font-size: 1.8rem;
+    }    
 }
 
 /* 2xl */
 @media (min-width: 1536px) {
-    .container {
-        max-width: 1536px;
-    }
-
-    .mobile-menu {
-        display: none;
+    .about {
+        margin-top: 10%;
     }
     
-    .nav-item {
-        display: block;
+    .about div h1 {
+        font-size: 3.5rem;
     }
 
-    .mobile-menu-icon {
-        display: none;
+    .about div p{
+        font-size: 2rem;
+    }
+
+    strong {
+        font-size: 1.8rem;
     }
 }
